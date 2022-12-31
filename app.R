@@ -170,7 +170,8 @@ server <- function(input, output, session) {
                 ),
                 options=list(
                              paging=FALSE,
-                             columnDefs = list(list(className = 'dt-center', targets = 1:7))
+                             columnDefs = list(list(className = 'dt-center', targets = 1:7)),
+                             searching = FALSE
                 ) 
       ) %>% 
         formatCurrency(columns = c(5, 6, 7, 8))
