@@ -170,7 +170,7 @@ server <- function(input, output, session) {
                 ),
                 options=list(
                              paging=FALSE,
-                             columnDefs = list(list(className = 'dt-center', targets = 1:7)),
+                             columnDefs = list(list(className = 'dt-center', targets = 1:8)),
                              searching = FALSE
                 ) 
       ) %>% 
@@ -225,7 +225,7 @@ server <- function(input, output, session) {
                 caption = "Summary of Cameo Asking Prices 5/26/21 - 7/10/22",
                 options=list(scrollY=400,
                              paging=FALSE,
-                             columnDefs = list(list(className = 'dt-center', targets = 1:7))
+                             columnDefs = list(list(className = 'dt-center', targets = 1:8))
                              )
                 ) %>%
         formatCurrency(columns = c(5, 6, 7, 8))
